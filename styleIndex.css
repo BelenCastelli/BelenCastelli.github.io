@@ -22,6 +22,8 @@ body{
 
 .fondo{
     position: relative;
+    border: solid black 3px;
+    width: 100%;
   }
   
   .fondo::before {
@@ -104,32 +106,39 @@ main{
     height: 1250px;
     font-family: var(--text);
     color: black;
+    border: solid blue 3px;
+    width: 100%;
 }
 
 .presentacion{
-    width: 60%;
+    width: 800px;
     height: 800px;
     margin-top:400px;
     margin-left: 250px;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: flex-start ;
     align-items: center;
+    border: solid red 3px;
 }
 
 .presentacion-p{
-    height: 250px;
-    width: 70%;
+    height: 260px;
+    width: 800px;
     font-size: 20pt;
-    padding: 30px;
+    padding: 34px;
     margin-bottom: 130px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px;
 }
 
 .p1{
     background-color: rgba(255, 235, 205, 0.857);
-    height: 200px;
-    text-align: center;
+}
 
+.p2{
+    background-color: rgb(245, 203, 139);
 }
 .p1::after{
     content: "Desarrollo Web.";
@@ -142,11 +151,7 @@ main{
     transform: scale(1.25);
     transition: 2s;
 }
-.p2{
-    background-color: rgb(245, 203, 139);
-    height: 200px;
-    text-align: center;
-}
+
 
 .p2:hover{
     background-color: rgba(255, 235, 205, 0.857);
